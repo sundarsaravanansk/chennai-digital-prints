@@ -50,7 +50,7 @@ const Page = () => {
                     <h1 className='text-[55px] font-extrabold'>Products</h1>
                 </div>
                 <div className='uppercase'>
-                    <Link href={'/'} >---"Back-to-Home"</Link>
+                    <Link href={'/'} >Back-to-Home</Link>
                 </div>
                 <div className="containers">
                     <div className='flex flex-wrap justify-between'>
