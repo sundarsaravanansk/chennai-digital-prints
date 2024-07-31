@@ -24,21 +24,27 @@ const Page = () => {
     const imgloop = [
         {
             img: "/products/invitation 1.jpg",
+            thumb : "/products/invitation 1.jpg",
         },
         {
-            img: "/products/sticker 1.jpg"
+            img: "/products/sticker 1.jpg",
+            thumb : "/products/invitation 1.jpg",
         },
         {
-            img: "/products/flyers 2.jpg"
+            img: "/products/flyers 2.jpg",
+            thumb : "/products/invitation 1.jpg",
         },
         {
-            img: "/products/visiting.jpg"
+            img: "/products/visiting.jpg",
+            thumb : "/products/invitation 1.jpg",
         },
         {
-            img: "/products/Flyers.jpg"
+            img: "/products/Flyers.jpg",
+            thumb : "/products/invitation 1.jpg",
         },
         {
-            img: "/products/Broucher.png"
+            img: "/products/Broucher.png",
+            thumb : "/products/invitation 1.jpg",
         },
 
     ]
@@ -59,7 +65,7 @@ const Page = () => {
                                 <div className="card py-14">
                                     <div className="card-wrapper">
                                         <div className="card-item">
-                                        <a data-fancybox="gallery" href={val.img}>
+                                        <a data-fancybox="gallery" href={val.thumb}>
                                             <figure className="card-image">
                                            
                                                 <img src={val.img} alt="..." />
