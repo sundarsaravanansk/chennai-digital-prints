@@ -27,25 +27,18 @@ const Page = () => {
             thumb : "/products/invitation 1.jpg",
         },
         {
-            img: "/products/sticker 1.jpg",
-            thumb : "/products/invitation 1.jpg",
+            
+            thumb : "/products/invitation 2.jpg",
         },
         {
-            img: "/products/flyers 2.jpg",
-            thumb : "/products/invitation 1.jpg",
+           
+            thumb : "/products/invitation 3.jpg",
         },
         {
-            img: "/products/visiting.jpg",
-            thumb : "/products/invitation 1.jpg",
+            
+            thumb : "/products/invitation 3.jpg",
         },
-        {
-            img: "/products/Flyers.jpg",
-            thumb : "/products/invitation 1.jpg",
-        },
-        {
-            img: "/products/Broucher.png",
-            thumb : "/products/invitation 1.jpg",
-        },
+      
 
     ]
     return (
@@ -60,15 +53,16 @@ const Page = () => {
                 </div>
                 <div className="containers">
                     <div className='flex flex-wrap justify-between'>
-                        {imgloop.map((val) => {
+                        {imgloop.slice(0 ,).map((val) => {
                             return (<>
+                           
                                 <div className="card py-14">
                                     <div className="card-wrapper">
                                         <div className="card-item">
                                         <a data-fancybox="gallery" href={val.thumb}>
                                             <figure className="card-image">
-                                           
-                                                <img src={val.img} alt="..." />
+                                               
+                                            <img src={val.img && val.thumb} alt="..." />
                                                
                                             </figure>
                                          
@@ -77,6 +71,7 @@ const Page = () => {
                                         </div>
                                     </div>
                                 </div>
+                                  
                             </>)
                         })}
 
